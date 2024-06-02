@@ -21,12 +21,27 @@ body {
 }
 
 .message {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Sofia", sans-serif;
+  text-decoration-color: #010abf;
   color: white;
   position: absolute;
   z-index: 1;
   top: 3%;
   text-align: center;
+
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .night {
